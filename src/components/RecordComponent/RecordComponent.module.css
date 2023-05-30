@@ -1,0 +1,36 @@
+.root {
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 4px;
+}
+.root button {
+	padding: 4px 8px !important;
+}
+.wrap {
+	width: 100%;
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 12px;
+	padding-left: 24px;
+}
+
+.wrap span:last-child {
+	justify-self: end;
+}
+
+.root:hover {
+	background: var(--gray-light-color);
+	border-radius: 5px;
+	cursor: pointer;
+}
+.tags {
+	display: flex;
+	gap: 4px;
+}
+.tag {
+	font-size: 12px !important;
+	width: min-content;
+}

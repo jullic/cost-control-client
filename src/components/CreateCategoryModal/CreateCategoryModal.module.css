@@ -1,0 +1,11 @@
+.root {
+}
+.wrap {
+	padding: 24px;
+	width: 50vw;
+	background: var(--white-color);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}

@@ -1,0 +1,64 @@
+.root {
+	padding: 24px;
+	padding-bottom: 300px;
+}
+.create {
+}
+.header {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+.btns {
+	display: flex;
+	gap: 8px;
+}
+.dates {
+	display: flex;
+	gap: 8px;
+}
+.main {
+}
+
+.create-btns {
+	display: flex;
+	position: fixed;
+	gap: 8px;
+	top: 24px;
+	right: 24px;
+}
+
+.create {
+	background: var(--black-color) !important;
+	color: var(--white-color) !important;
+	padding: 8px 32px !important;
+}
+.create:hover {
+	filter: brightness(1.5);
+}
+
+.category select {
+	font-weight: bold;
+	width: 100%;
+}
+
+.search {
+}
+.search-tag {
+}
+.tags {
+}
+
+.datesComp {
+	margin-top: 12px;
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
+}
+
+.result {
+	margin-top: 24px;
+	padding-bottom: 32px !important;
+	border-bottom: 1px solid var(--gray-light-color);
+}

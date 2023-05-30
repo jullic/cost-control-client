@@ -1,0 +1,30 @@
+.root {
+}
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4px 16px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 1px dashed var(--gray-color);
+}
+.title:hover {
+	background: var(--gray-light-color);
+}
+.title > span {
+	color: var(--primary-color);
+}
+
+.title h2,
+.title h3,
+.title h4,
+.title h1 {
+	margin: 0 !important;
+}
+.categories {
+	margin-top: 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+}

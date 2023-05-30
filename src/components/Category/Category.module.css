@@ -1,0 +1,29 @@
+.root {
+	display: flex;
+	flex-direction: column;
+	padding-left: 24px;
+	gap: 16px;
+}
+
+.records {
+	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--gray-light-color);
+	padding: 4px 16px;
+}
+
+.title:hover {
+	border-radius: 5px;
+	background: var(--gray-light-color);
+	cursor: pointer;
+}
+
+.title span:first-child {
+}

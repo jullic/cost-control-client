@@ -1,0 +1,13 @@
+.root {
+	padding: 4px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid var(--primary-color);
+	color: var(--primary-color);
+	border-radius: 10px;
+	white-space: nowrap;
+}
+.root:hover {
+	cursor: pointer;
+	background: var(--gray-light-color);
+}
