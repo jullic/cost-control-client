@@ -59,6 +59,13 @@ export const CreateRecordModal: FC<ICreateRecordModalProps> = ({
 			!Number.isNaN(+sum)
 		) {
 			const [year, month, day] = date.split('-');
+			let t =
+				type === 'income'
+					? 'income'
+					: type === 'expense'
+					? 'expense'
+					: 'expense';
+
 			dispatch(
 				createRecords({
 					categoryName: category,
@@ -66,7 +73,7 @@ export const CreateRecordModal: FC<ICreateRecordModalProps> = ({
 					name,
 					sum: +sum,
 					tags: newTags,
-					type: type as 'income' | 'expense',
+					type: t as 'income' | 'expense',
 				})
 			);
 			dispatch(modalsActions.changeModal('none'));
@@ -107,6 +114,7 @@ export const CreateRecordModal: FC<ICreateRecordModalProps> = ({
 					<select
 						value={type}
 						onChange={(e) => {
+							console.log(e.target.value);
 							setType(e.target.value);
 							window.localStorage.setItem(
 								'lastType',
