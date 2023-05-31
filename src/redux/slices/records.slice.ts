@@ -3,6 +3,7 @@ import axios, { AxiosError } from 'axios';
 import { ICreateRecord, IRecord } from '../../interfaces/record.interface';
 import { store } from '../store';
 import { getDefaultDateRange } from '../../utils/date.utils';
+import { fetchTags } from './tags.slice';
 
 export const fetchRecords = createAsyncThunk<any, undefined>(
 	'records/fetchRecords',
@@ -33,6 +34,7 @@ export const createRecords = createAsyncThunk<any, ICreateRecord>(
 				body
 			);
 			await thunkApi.dispatch(fetchRecords());
+			await thunkApi.dispatch(fetchTags());
 			return data;
 		} catch (error) {
 			if (error instanceof AxiosError) {
